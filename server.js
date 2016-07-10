@@ -15,9 +15,9 @@ var path = require('path');
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
-var cors = require('cors');
+//var cors = require('cors');
 var COMMENTS_FILE = path.join(__dirname, 'comments.json');
-app.use(cors);
+//app.use(cors);
 app.set('port', 3000);
 
 app.use('/', express.static(path.join(__dirname, '/')));

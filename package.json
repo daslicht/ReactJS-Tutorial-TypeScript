@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "webpack-dev-server": "./node_modules/.bin/webpack-dev-server",
+    "webpack-dev-server": "./node_modules/.bin/webpack-dev-server --inline",
     "api-server": "node server.js",
     "dev": "npm run webpack-dev-server & npm run api-server"
   },

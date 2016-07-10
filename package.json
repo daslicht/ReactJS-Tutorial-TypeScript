@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tsc": "tsc -w",
     "webpack": "webpack -w",
     "server": "node server.js",
     "dev": "npm run webpack  &   npm run server" 

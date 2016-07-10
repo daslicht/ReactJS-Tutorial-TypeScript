@@ -15,10 +15,10 @@ var path = require('path');
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
-
+var cors = require('cors');
 var COMMENTS_FILE = path.join(__dirname, 'comments.json');
-
-app.set('port', (process.env.PORT || 3000));
+app.use(cors);
+app.set('port', 3000);
 
 app.use('/', express.static(path.join(__dirname, '/')));
 app.use(bodyParser.json());

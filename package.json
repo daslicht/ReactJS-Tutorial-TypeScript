@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack -w",
-    "server": "node server.js",
-    "dev": "npm run webpack  &  npm run server"
+    "webpack-dev-server": "./node_modules/.bin/webpack-dev-server",
+    "api-server": "node server.js",
+    "dev": "npm run webpack-dev-server & npm run api-server"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.4.3",
+    "cors": "^2.7.1",
     "express": "^4.4.5",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "forever": "^0.15.2",
     "source-map-loader": "^0.1.5",
-    "ts-loader": "^0.8.2"
+    "ts-loader": "^0.8.2",
+    "webpack-dev-server": "^1.14.1"
   }
 }

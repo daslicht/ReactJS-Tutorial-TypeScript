@@ -4,7 +4,7 @@ import { CommentForm } from "./CommentForm";
 import { CommentList } from "./CommentList";
 declare let $: any;
 
-export interface CommentBoxProps { data: any, url: any, pollInterval: any }
+export interface CommentBoxProps { url: any, pollInterval: any }
 
 interface AppState { data: any }
 

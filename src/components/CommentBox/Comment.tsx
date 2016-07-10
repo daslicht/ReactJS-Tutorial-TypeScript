@@ -3,7 +3,6 @@ export interface CommentProps { author: string; }
 declare let Remarkable: any;
 export class Comment extends React.Component<CommentProps, {}>{
 
-
     rawMarkup() {
         var md = new Remarkable();
         var rawMarkup = md.render(this.props.children.toString());

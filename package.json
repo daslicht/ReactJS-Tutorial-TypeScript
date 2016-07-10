@@ -7,7 +7,7 @@
     "tsc": "tsc -w",
     "webpack": "webpack -w",
     "server": "node server.js",
-    "dev": "npm run tsc  &   npm run webpack  &   npm run server"
+    "dev": "npm run webpack  &   npm run server" 
   },
   "author": "",
   "license": "ISC",

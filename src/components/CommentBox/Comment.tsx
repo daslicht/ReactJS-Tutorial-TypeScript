@@ -17,6 +17,7 @@ export class Comment extends React.Component<CommentProps, {}>{
                 <h2 className="commentAuthor">
                     {this.props.author}
                 </h2>
+                
                 <span dangerouslySetInnerHTML={this.rawMarkup()} />
             </div>
         );
